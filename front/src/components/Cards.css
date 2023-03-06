@@ -1,9 +1,6 @@
 .card--container {
     width: 19.438rem;
     height: 11.7000rem;
-    
-    top: 29%;
-    left: 12%;
     border: solid 5px;
     align-items: center;
     border-radius: 20px;
@@ -14,10 +11,6 @@
 .card--container2 {
     width: 19.438rem;
     height: 11.7000rem;
-    
-    
-    top: 29%;
-    left: 41%;
     border: solid 5px;
     align-items: center;
     border-radius: 20px;
@@ -28,13 +21,31 @@
 .card--container3 {
     width: 19.438rem;
     height: 11.7000rem;
-    
-    
-    top: 29%;
-    right: 13%;
     border: solid 5px;
     align-items: center;
     border-radius: 20px;
     border-width: 10px;
     border-color: white;
+}
+
+.card--container4 {
+    width: 19.438rem;
+    height: 11.7000rem;
+    border: solid 5px;
+    align-items: center;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: white;
+    
+}
+
+.card--container5 {
+    width: 19.438rem;
+    height: 11.7000rem;
+    border: solid 5px;
+    align-items: center;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: white;
+    
 }

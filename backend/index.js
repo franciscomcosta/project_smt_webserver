@@ -35,7 +35,15 @@ app.get("/getamb1", (req, res)=>{
 })
 
 app.get("/getamb2", (req, res)=>{
-    let SQL = "SELECT id,temp_value, humi_value FROM tb_temp_humi WHERE id_sensor LIKE 'sensor_ambiente_1' order  by id desc LIMIT 1";
+    let SQL = "SELECT id,temp_value, humi_value FROM tb_temp_humi WHERE id_sensor LIKE 'sensor_ambiente_2' order  by id desc LIMIT 1";
+    db.query(SQL, (err, result) =>{
+        if (err) console.log(err);
+        else res.send(result);
+    })
+})
+
+app.get("/getamb3", (req, res)=>{
+    let SQL = "SELECT id,temp_value, humi_value,date_time FROM tb_temp_humi WHERE id_sensor LIKE 'sensor_ambiente_3' order  by id desc LIMIT 1";
     db.query(SQL, (err, result) =>{
         if (err) console.log(err);
         else res.send(result);
